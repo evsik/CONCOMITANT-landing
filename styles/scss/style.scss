@@ -44,11 +44,182 @@ body {
   min-height: 100vh;
 }
 
+header {
+}
+
+.b-logo {
+
+  .b-logo__name {
+  }
+}
+
+.b-socials {
+
+  .b-socials__ul {
+
+    .b-socials__list {
+
+      .b-socials__link {
+
+        i {
+        }
+      }
+    }
+  }
+}
+
+.b-auth {
+
+  .b-auth__ul {
+
+    .b-auth__list {
+
+      .b-auth__link {
+      }
+    }
+  }
+}
+
+.b-navigationSlider {
+}
+
+.b-nav {
+
+  .b-nav__ul {
+
+    .b-nav__list {
+
+      .b-nav__link {
+      }
+    }
+  }
+}
+
+.b-search {
+
+  .b-search__form {
+
+    .b-search__inputSearch {
+    }
+
+    .b-search__inputSubmit {
+    }
+  }
+}
+
+.b-slider{}
 
 main {
   flex-grow: 1;
 }
 
+.b-aboutUs{}
+
+.b-peopleArticle{
+
+  .b-peopleArticle__logo{}
+
+  .b-peopleArticle__head{}
+
+  .b-peopleArticle__text{}
+}
+
+.b-globeArticle{
+
+  .b-globeArticle__logo{
+  }
+
+  .b-globeArticle__head{}
+
+  .b-globeArticle__text{}
+}
+
+.b-cogsArticle{
+
+  .b-cogsArticle__logo{}
+
+  .b-cogsArticle__head{}
+
+  .b-cogsArticle__text{}
+}
+
+.b-natureArticle{
+
+  .b-natureArticle__logo{}
+
+  .b-natureArticle__head{}
+
+  .b-natureArticle__text{}
+}
+
+.b-ourProject{}
+
+.b-project{
+
+  .b-project__img{}
+
+  .b-project__head{}
+
+  .b-project__text{}
+
+  .b-project__details{}
+}
+
 footer {
   flex-shrink: 0;
+}
+
+.b-footerWrapper{}
+
+.b-contacts{
+
+  .b-contacts__head{}
+
+  .b-contacts__text{}
+
+  .b-contacts__address{}
+}
+
+.b-links{
+
+  .b-links__head{}
+
+  .b-links__ul{
+
+    .b-links__list{
+
+      .b-links__link{}
+    }
+  }
+}
+
+.b-blog{
+
+  .b-blog__head {}
+
+  .b-blog__title{}
+
+  .b-blog__author{}
+
+  .b-blog__text{}
+
+  .b-blog__link{}
+}
+
+.b-subscribeFrom{
+
+  .b-subscribeFrom__head{}
+
+  .b-subscribeFrom__inputName{}
+
+  .b-subscribeFrom__inputEmail{}
+
+  .b-subscribeFrom__inputSubmit{}
+}
+
+.b-runningTitle{
+
+  .b-runningTitle__head{}
+
+  .b-runningTitle__text{}
 }
