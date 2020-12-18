@@ -1,3 +1,5 @@
+@import "../../packages/bootstrap-4.5.3/scss/bootstrap";
+
 @font-face {
   font-family: "Georgia";
   src: url("../../packages/fonts/geo/Georgia.ttf");
@@ -37,7 +39,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  //max-width: 1140px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -107,119 +109,154 @@ header {
   }
 }
 
-.b-slider{}
+.b-slider {
+}
 
 main {
   flex-grow: 1;
 }
 
-.b-aboutUs{}
-
-.b-peopleArticle{
-
-  .b-peopleArticle__logo{}
-
-  .b-peopleArticle__head{}
-
-  .b-peopleArticle__text{}
+.b-aboutUs {
 }
 
-.b-globeArticle{
+.b-peopleArticle {
 
-  .b-globeArticle__logo{
+  .b-peopleArticle__logo {
   }
 
-  .b-globeArticle__head{}
+  .b-peopleArticle__head {
+  }
 
-  .b-globeArticle__text{}
+  .b-peopleArticle__text {
+  }
 }
 
-.b-cogsArticle{
+.b-globeArticle {
 
-  .b-cogsArticle__logo{}
+  .b-globeArticle__logo {
+  }
 
-  .b-cogsArticle__head{}
+  .b-globeArticle__head {
+  }
 
-  .b-cogsArticle__text{}
+  .b-globeArticle__text {
+  }
 }
 
-.b-natureArticle{
+.b-cogsArticle {
 
-  .b-natureArticle__logo{}
+  .b-cogsArticle__logo {
+  }
 
-  .b-natureArticle__head{}
+  .b-cogsArticle__head {
+  }
 
-  .b-natureArticle__text{}
+  .b-cogsArticle__text {
+  }
 }
 
-.b-ourProject{}
+.b-natureArticle {
 
-.b-project{
+  .b-natureArticle__logo {
+  }
 
-  .b-project__img{}
+  .b-natureArticle__head {
+  }
 
-  .b-project__head{}
+  .b-natureArticle__text {
+  }
+}
 
-  .b-project__text{}
+.b-ourProject {
+}
 
-  .b-project__details{}
+.b-project {
+
+  .b-project__img {
+  }
+
+  .b-project__head {
+  }
+
+  .b-project__text {
+  }
+
+  .b-project__details {
+  }
 }
 
 footer {
   flex-shrink: 0;
 }
 
-.b-footerWrapper{}
-
-.b-contacts{
-
-  .b-contacts__head{}
-
-  .b-contacts__text{}
-
-  .b-contacts__address{}
+.b-footerWrapper {
 }
 
-.b-links{
+.b-contacts {
 
-  .b-links__head{}
+  .b-contacts__head {
+  }
 
-  .b-links__ul{
+  .b-contacts__text {
+  }
 
-    .b-links__list{
+  .b-contacts__address {
+  }
+}
 
-      .b-links__link{}
+.b-links {
+
+  .b-links__head {
+  }
+
+  .b-links__ul {
+
+    .b-links__list {
+
+      .b-links__link {
+      }
     }
   }
 }
 
-.b-blog{
+.b-blog {
 
-  .b-blog__head {}
+  .b-blog__head {
+  }
 
-  .b-blog__title{}
+  .b-blog__title {
+  }
 
-  .b-blog__author{}
+  .b-blog__author {
+  }
 
-  .b-blog__text{}
+  .b-blog__text {
+  }
 
-  .b-blog__link{}
+  .b-blog__link {
+  }
 }
 
-.b-subscribeFrom{
+.b-subscribeFrom {
 
-  .b-subscribeFrom__head{}
+  .b-subscribeFrom__head {
+  }
 
-  .b-subscribeFrom__inputName{}
+  .b-subscribeFrom__inputName {
+  }
 
-  .b-subscribeFrom__inputEmail{}
+  .b-subscribeFrom__inputEmail {
+  }
 
-  .b-subscribeFrom__inputSubmit{}
+  .b-subscribeFrom__inputSubmit {
+  }
 }
 
-.b-runningTitle{
+.b-runningTitle {
 
-  .b-runningTitle__head{}
+  .b-runningTitle__head {
+  }
 
-  .b-runningTitle__text{}
+  .b-runningTitle__text {
+  }
 }
