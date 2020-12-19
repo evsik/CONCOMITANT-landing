@@ -1,3 +1,3 @@
 # CONCOMITANT-landing
 
-(SCSS, CSS Animation, Flex, БЭМ)
+(SCSS, CSS Animation, Flex, Grid, БЭМ, bootstrap)
