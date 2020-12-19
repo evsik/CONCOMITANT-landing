@@ -2,6 +2,7 @@
 @import "_variables";
 @import "variablesColors";
 @import "extends";
+@import "mixins";
 
 @font-face {
   font-family: "Georgia";
@@ -49,10 +50,6 @@ body {
   min-height: 100vh;
 }
 
-.padding-site {
-  padding: 0 30px 0 30px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -76,7 +73,6 @@ header {
 }
 
 .b-social-nav {
-
 }
 
 .b-socials {
@@ -143,7 +139,7 @@ header {
         text-decoration: none;
 
         &:hover {
-          opacity: 0.7;
+          opacity: $varHoverOpacity;
         }
       }
     }
@@ -151,15 +147,64 @@ header {
 }
 
 .b-navigationSlider {
+  background-color: $varGreenTheme;
+  display: flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 }
 
 .b-nav {
 
+  @include media-breakpoint-down(md) {
+    flex-grow: 1;
+  }
+
+  @include media-breakpoint-down(md) {
+    align-self: center;
+  }
+
   .b-nav__ul {
+    @extend %flexForUl;
+    margin: 0;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-flow: column;
+      text-align: center;
+    }
 
     .b-nav__list {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+      }
 
       .b-nav__link {
+        text-decoration: none;
+        color: $varColorWhite;
+        font-family: $varFontGeorgia;
+        font-size: 13px;
+        transition: 0.2s;
+
+        &:hover {
+          color: $varColorBlack;
+        }
       }
     }
   }
@@ -168,12 +213,43 @@ header {
 .b-search {
 
   .b-search__form {
+    position: relative;
+
+    label {
+      margin: 0;
+    }
 
     .b-search__inputSearch {
+      color: #7f7f7f;
+      width: 282px;
+      height: 30px;
+      padding-left: 5px;
+      @extend %styleForNavInput;
     }
 
     .b-search__inputSubmit {
+      padding: 0 1px 0 1px;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      color: $varGreenTheme;
+      font-weight: bold;
+      background-color: $varColorWhite;
+      @extend %styleForNavInput;
+
+      &:hover {
+        opacity: $varHoverOpacity;
+      }
     }
+  }
+}
+
+//Модификатор margin для md
+.b-search_margin_md_navBlock {
+
+  @include media-breakpoint-down(md) {
+    margin-left: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -185,57 +261,92 @@ main {
 }
 
 .b-aboutUs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-down(xs) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .b-peopleArticle {
+  text-align: center;
 
   .b-peopleArticle__logo {
+    margin-bottom: 15px;
   }
 
   .b-peopleArticle__head {
+    @include articleStyles($varGreenTheme, 18px, 21.6px);
+    margin-bottom: 15px;
   }
 
   .b-peopleArticle__text {
+    @include articleStyles(#888888, 13px, 20.8px);
+
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+    }
   }
 }
 
 .b-globeArticle {
+  @extend .b-peopleArticle;
 
   .b-globeArticle__logo {
+    @extend .b-peopleArticle__logo;
   }
 
   .b-globeArticle__head {
+    @extend .b-peopleArticle__head;
   }
 
   .b-globeArticle__text {
+    @extend .b-peopleArticle__text;
   }
 }
 
 .b-cogsArticle {
+  @extend .b-peopleArticle;
 
   .b-cogsArticle__logo {
+    @extend .b-peopleArticle__logo;
   }
 
   .b-cogsArticle__head {
+    @extend .b-peopleArticle__head;
   }
 
   .b-cogsArticle__text {
+    @extend .b-peopleArticle__text;
   }
 }
 
 .b-natureArticle {
+  @extend .b-peopleArticle;
 
   .b-natureArticle__logo {
+    @extend .b-peopleArticle__logo;
   }
 
   .b-natureArticle__head {
+    @extend .b-peopleArticle__head;
   }
 
   .b-natureArticle__text {
+    @extend .b-peopleArticle__text;
   }
 }
 
 .b-ourProject {
+  @extend .b-aboutUs;
 }
 
 .b-project {
@@ -244,12 +355,21 @@ main {
   }
 
   .b-project__head {
+    @include articleStyles(#444444, 14px, 16.8px);
+    text-align: left;
   }
 
   .b-project__text {
+    @include articleStyles(#878787, 13px, 20.8px);
+    text-align: left;
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+    }
   }
 
   .b-project__details {
+    @include articleStyles($varGreenTheme, 13px, 13px);
+    float: right;
   }
 }
 
@@ -327,4 +447,9 @@ footer {
 
   .b-runningTitle__text {
   }
+}
+
+.padding-site {
+  padding-left: 30px;
+  padding-right: 30px;
 }

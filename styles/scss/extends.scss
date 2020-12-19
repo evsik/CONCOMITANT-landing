@@ -1,4 +1,25 @@
+@import "variablesColors";
+@import "_variables";
+
 %flexForUl {
   display: flex;
   list-style-type: none;
+}
+
+%styleForNavInput {
+  font-size: 12px;
+  font-family: $varFontGeorgia;
+  border: 1px solid #dddddd;
+}
+
+%articleLogo{
+  margin-bottom: 15px;
+}
+
+%articleHead{
+  color: $varGreenTheme;
+  font-family: $varFontGeorgia;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 15px;
 }
