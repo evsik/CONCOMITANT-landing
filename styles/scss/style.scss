@@ -25,7 +25,7 @@
 }
 
 html {
-  background-color: #ffffff;
+  background-color: $varColorWhite;
   //height: 100%;
 }
 
@@ -99,10 +99,10 @@ header {
         width: 32px;
         height: 32px;
         line-height: 32px;
-        background-color: #333333;
+        background-color: $varColorBlack;
         text-align-last: center;
         border-radius: 50%;
-        color: #ffffff;
+        color: $varColorWhite;
         text-decoration: none;
         transition: 0.5s;
 
@@ -225,7 +225,7 @@ header {
     }
 
     .b-search__inputSearch {
-      color: #7f7f7f;
+      color: $varLightGrey;
       width: 282px;
       height: 30px;
       padding-left: 5px;
@@ -310,7 +310,7 @@ main {
   }
 
   .b-peopleArticle__text {
-    @include articleStyles(#888888, 13px, 20.8px);
+    @include articleStyles($varLightGrey, 13px, 20.8px);
 
     @include media-breakpoint-up(xl) {
       font-size: 16px;
@@ -378,6 +378,8 @@ main {
 
   .b-project__img {
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 250px;
   }
 
   .b-project__head {
@@ -386,7 +388,7 @@ main {
   }
 
   .b-project__text {
-    @include articleStyles(#878787, 13px, 20.8px);
+    @include articleStyles($varLightGrey, 13px, 20.8px);
     text-align: left;
     @include media-breakpoint-up(xl) {
       font-size: 16px;
@@ -422,11 +424,11 @@ footer {
   }
 
   .b-contacts__text {
-    @include articleStyles(#999999, 13px, 20.8px);
+    @include articleStyles($varLightGrey, 13px, 20.8px);
   }
 
   .b-contacts__address {
-    @include articleStyles(#999999, 12px, 19.2px);
+    @include articleStyles($varLightGrey, 12px, 19.2px);
   }
 }
 
@@ -447,7 +449,7 @@ footer {
       padding-bottom: 10px;
 
       .b-links__link {
-        @include articleStyles(#999999, 12px, 19.2px);
+        @include articleStyles($varLightGrey, 12px, 19.2px);
         text-decoration: none;
 
         &:hover {
@@ -466,16 +468,16 @@ footer {
   }
 
   .b-blog__title {
-    @include articleStyles(#999999, 13px, 15.6px);
+    @include articleStyles($varLightGrey, 13px, 15.6px);
     font-weight: bold;
   }
 
   .b-blog__author {
-    @include articleStyles(#999999, 11px, 13.2px);
+    @include articleStyles($varLightGrey, 11px, 13.2px);
   }
 
   .b-blog__text {
-    @include articleStyles(#999999, 12px, 19.2px);
+    @include articleStyles($varLightGrey, 12px, 19.2px);
   }
 
   .b-blog__link {
@@ -492,11 +494,11 @@ footer {
   }
 
   .b-subscribeFrom__inputName {
-    @include articleStyles(#999999, 13px, 20.58px);
+    @include articleStyles($varLightGrey, 13px, 20.58px);
     margin-bottom: 10px;
     width: 100%;
     height: 31px;
-    background-color: #1f1f1f;
+    background-color: $varColorBlack;
     border: none;
     border-radius: 10px;
     padding-left: 10px;
@@ -509,7 +511,7 @@ footer {
   .b-subscribeFrom__inputSubmit {
     @include articleStyles($varGreenTheme, 13px, 20.58px);
     font-weight: bold;
-    background-color: #1f1f1f;
+    background-color: $varColorBlack;
     border: none;
     padding: 8px 10px 8px 10px;
     border-radius: 10px;
@@ -523,7 +525,7 @@ footer {
   justify-content: space-between;
 
   .b-runningTitle__head {
-    @include articleStyles(#737373, 12px, 14.4px);
+    @include articleStyles($varLightGrey, 12px, 14.4px);
     margin: 0;
     @include media-breakpoint-down(sm) {
       margin-bottom: 10px;
