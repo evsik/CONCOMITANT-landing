@@ -3,7 +3,6 @@
 
 @mixin articleStyles($_tColor, $_fSize, $_lHeight) {
   color: $_tColor;
-  font-family: $varFontGeorgia;
   font-size: $_fSize;
   line-height: $_lHeight;
 }
